@@ -1,66 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>💖 My Melody & Cinnamoroll Watches</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/763/763704.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Relojes de Lujo</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="bg-hearts"></div>
 
-  <header class="site-header">
-    <h1>My Melody & Cinnamoroll ⌚</h1>
-    <p class="tagline">Relojes de lujo con ternura pastel 🌸</p>
+  <header>
+    <h1>⟡ Tienda de Relojes de Lujo ⟡</h1>
     <nav>
-      <ul class="nav-list">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
         <li><a href="#catalogo">Catálogo</a></li>
-        <li><a href="#carrito">Carrito 🛍️</a></li>
-        <li><a href="#cuenta">Cuenta</a></li>
+        <li><a href="#comparador">Comparador</a></li>
+        <li><a href="#autenticacion">Autenticación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="catalogo" class="panel">
-      <h2>✨ Catálogo de Relojes</h2>
-      <div class="grid" id="product-list"></div>
+
+    <section id="inicio">
+      <h2>Bienvenido</h2>
+      <p>Explora nuestra colección de relojes de lujo con estilo y elegancia.</p>
+      <canvas id="visor3D"></canvas>
     </section>
 
-    <section id="carrito" class="panel">
-      <h2>🛒 Tu Carrito</h2>
-      <ul id="cart-items"></ul>
-      <p><strong>Total:</strong> $<span id="cart-total">0</span> MXN</p>
-      <button id="checkout-btn">Finalizar compra 💕</button>
-    </section>
+    <section id="catalogo">
+      <h2>Catálogo de Relojes</h2>
+      <div class="grid-catalogo">
+        <article class="reloj">
+          <img src="img/reloj1.jpg" alt="Reloj Clásico">
+          <h3>Reloj Clásico Rosa</h3>
+          <p>Precio: $15,000 MXN</p>
+          <button>Ver Detalles</button>
+        </article>
 
-    <section id="cuenta" class="panel">
-      <h2>👤 Mi Cuenta</h2>
-      <div class="auth-wrap">
-        <div class="auth-box">
-          <h3>Iniciar Sesión</h3>
-          <input type="text" id="login-user" placeholder="Usuario" />
-          <input type="password" id="login-pass" placeholder="Contraseña" />
-          <button onclick="login()">Entrar</button>
-        </div>
-
-        <div class="auth-box">
-          <h3>Crear Cuenta</h3>
-          <input type="text" id="new-user" placeholder="Nuevo usuario" />
-          <input type="password" id="new-pass" placeholder="Contraseña" />
-          <button onclick="register()">Registrar</button>
-        </div>
+        <article class="reloj">
+          <img src="img/reloj2.jpg" alt="Reloj Moderno">
+          <h3>Reloj Moderno Dorado</h3>
+          <p>Precio: $22,000 MXN</p>
+          <button>Ver Detalles</button>
+        </article>
       </div>
     </section>
+
+    <section id="comparador">
+      <h2>Comparador de Relojes</h2>
+      <div id="comparador-container">
+        <select id="relojA">
+          <option value="">Selecciona reloj A</option>
+          <option value="clásico">Reloj Clásico Rosa</option>
+          <option value="moderno">Reloj Moderno Dorado</option>
+        </select>
+
+        <select id="relojB">
+          <option value="">Selecciona reloj B</option>
+          <option value="clásico">Reloj Clásico Rosa</option>
+          <option value="moderno">Reloj Moderno Dorado</option>
+        </select>
+
+        <button id="comparar">Comparar</button>
+      </div>
+      <div id="resultadoComparacion"></div>
+    </section>
+
+    <section id="autenticacion">
+      <h2>Iniciar Sesión</h2>
+      <form id="form-login">
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" name="usuario" required>
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Entrar</button>
+      </form>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form id="form-contacto">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
   </main>
 
-  <footer class="site-footer">
-    <p>🌷 Tienda creada con amor pastel 💖 | Sanrio Inspired</p>
+  <footer>
+    <p>&copy; 2025 Tienda de Relojes de Lujo | Diseñado con 💕 por Ana</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
 
+
+---
 
